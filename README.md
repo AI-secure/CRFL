@@ -27,7 +27,7 @@
 1. MNIST and EMNIST:
 MNIST and EMNIST datasets will be automatically downloaded into the dir `./data` during training or testing.
 
-2. LOAN: Download the raw dataset `loan.csv` from `https://drive.google.com/file/d/14Fr32ujeuUvCDiTGBNKDLpWfYjpbKf7q/view?usp=sharing` into the dir `./data`.  
+2. LOAN: Download the raw dataset `loan.csv` from [Google Drive](https://drive.google.com/file/d/14Fr32ujeuUvCDiTGBNKDLpWfYjpbKf7q/view?usp=sharing) into the dir `./data`.  
 Run   
     ```shell
     python utils/loan_preprocess.py
