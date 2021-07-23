@@ -1,0 +1,13 @@
+type: loan
+
+N_m: 1000
+test_sigma: 0.01
+smoothed_fname: saved_models/model_loan_Feb.04_04.41.25/model_last.pt.tar.epoch_100
+alpha: 0.001 # for evaluation
+test_batch_size: 800
+
+# placeholder
+num_models: 1 
+batch_size: 800
+save_model: false
+resumed_model: false

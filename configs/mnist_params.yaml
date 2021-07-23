@@ -1,0 +1,33 @@
+type: mnist
+# local clients
+lr: 0.001
+batch_size: 100
+test_batch_size: 100
+internal_epochs: 1 # local epochs
+
+# server 
+epochs: 100
+param_clip_thres: 15
+sigma_param: 0.01
+# aggration options: 'mean_param' or  'geom_median'
+aggregation_methods: 'mean_param'
+num_models: 20
+
+# adv setup
+is_poison: true 
+poisoning_per_batch: 5 
+adversary_list: [1,2]
+poison_epochs: [70] 
+scale_factor: 100 
+poison_label_swap: 0
+poison_delta: 0.1 # magnitude of backdoor pattern
+poison_pattern: [[23,25], [24,24],[25,23],[25,25]]
+
+
+save_model: true
+save_on_epochs: [15,20,40,60,80,100,120,140,150]
+
+resumed_model: false
+resumed_model_name: model_mnist_Feb.04_03.48.25/model_last.pt.tar.epoch_5
+resumed_model_path: model_mnist_Feb.04_03.48.25/
+

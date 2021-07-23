@@ -1,0 +1,41 @@
+type: loan
+# local clients
+lr: 0.001
+batch_size: 800
+test_batch_size: 800
+internal_epochs: 1 # local epochs
+
+
+# server
+epochs: 100
+param_clip_thres: 5
+sigma_param: 0.01
+# aggration options: 'mean_param' or  'geom_median'
+aggregation_methods: 'mean_param'
+num_models: 20
+
+# adv setup
+is_poison: true
+poisoning_per_batch: 40
+adversary_list: [CT] # [CT,MO,TN] 
+# loan_CT.csv train 28628 test 7157 
+# loan_MO.csv train 28867 test 7217 
+# loan_TN.csv train 28386 test 7097 
+
+poison_epochs: [6] 
+scale_factor: 10 
+
+# label: ['Current', 'Fully Paid', 'Late (31-120 days)', 'In Grace Period', 'Charged Off', 'Late (16-30 days)', 'Default', 'Does not meet the credit policy. Status:Fully Paid', 'Does not meet the credit policy. Status:Charged Off']
+poison_label_swap: 7
+
+poison_delta: 0.1
+poison_trigger_names: ['num_tl_120dpd_2m', 'num_tl_90g_dpd_24m']
+
+
+save_model: true
+save_on_epochs: [15,20,40,60,80,100,120,140,150]
+
+resumed_model: false
+resumed_model_name: model_mnist_Jan.31_22.02.08/model_last.pt.tar.epoch_10
+resumed_model_path: model_mnist_Jan.28_18.05.32/
+

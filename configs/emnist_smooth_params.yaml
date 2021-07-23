@@ -1,0 +1,14 @@
+type: emnist
+
+N_m: 1000
+test_sigma: 0.01
+smoothed_fname: saved_models/model_emnist_Feb.09_17.26.41/model_last.pt.tar.epoch_100
+alpha: 0.001 # for evaluation
+test_batch_size: 32
+
+
+# placeholder
+num_models: 1 
+batch_size: 100
+save_model: false
+resumed_model: false

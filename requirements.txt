@@ -1,0 +1,8 @@
+PyYAML
+argparse
+matplotlib
+numpy
+opencv-python
+scipy
+torchvision>=0.4.0
+torch>=1.2.0

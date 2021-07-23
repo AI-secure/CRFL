@@ -1,0 +1,15 @@
+type: mnist
+
+N_m: 1000 # number of smoothed models 
+test_sigma: 0.01 # noise level
+# change 'smoothed_fname' to your model file name
+smoothed_fname: saved_models/model_mnist_Feb.04_15.41.37/model_last.pt.tar.epoch_45 
+alpha: 0.001 # error tolerance level
+test_batch_size: 32
+
+
+# placeholder
+num_models: 1 
+batch_size: 100
+save_model: false
+resumed_model: false
