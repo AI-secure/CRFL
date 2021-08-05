@@ -1,4 +1,5 @@
-# CRFL: Certifiably Robust Federated Learning against Backdoor Attacks (ICML 2021)
+# CRFL
+In this repository, code is for our ICML 2021 paper [CRFL: Certifiably Robust Federated Learning against Backdoor Attacks](https://arxiv.org/abs/2106.08283)
 
 ## Installation
 1. Create a virtual environment via `conda`.
@@ -63,4 +64,24 @@ python certify_mnist.py
 python certify_emnist.py
 python certify_loan.py
 ```
+
+## Citation
+If you find our work useful in your research, please consider citing:
+```
+@InProceedings{pmlr-v139-xie21a,
+  title = 	 {CRFL: Certifiably Robust Federated Learning against Backdoor Attacks},
+  author =       {Xie, Chulin and Chen, Minghao and Chen, Pin-Yu and Li, Bo},
+  booktitle = 	 {Proceedings of the 38th International Conference on Machine Learning},
+  pages = 	 {11372--11382},
+  year = 	 {2021},
+  volume = 	 {139},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {18--24 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v139/xie21a/xie21a.pdf},
+  url = 	 {http://proceedings.mlr.press/v139/xie21a.html},
+}
+```
+
+
 
